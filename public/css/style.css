@@ -1,0 +1,127 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    padding:20px;
+}
+
+.container {
+    display: flex;
+    min-height: 100vh;
+    width: 100%;  
+    position:relative;
+    
+} 
+
+.left-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30%;
+    min-height: 100vh;
+    background-color: rgb(175, 175, 175);
+    border-top-left-radius: 3px;  
+    border-bottom-left-radius: 3px; 
+    outline: 2px solid rgb(90, 90, 90); 
+}
+
+.right-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 70%;
+    min-height: 100vh;
+    padding: 3%;
+    background-color: lightgrey;
+    border-top-right-radius: 3px;  
+    border-bottom-right-radius: 3px;  
+    outline: 2px solid  rgb(90, 90, 90);
+}
+
+.items-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    gap: 20px;
+
+}
+
+.bottom-left-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100px;
+    height: 100px;
+    background-color:rgb(155, 154, 154);
+    border-right: 2px solid rgb(102, 102, 102);
+    border-top:  2px solid rgb(102, 102, 102);
+}
+
+.bottom-right-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 100px;
+    height: 100px;
+    background-color: rgb(136, 135, 135);
+    border-left: 2px solid rgb(102, 102, 102);
+    border-top:  2px solid rgb(102, 102, 102);
+}
+
+.inner-left-cont {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100px;
+    background-color: rgb(150, 142, 142);
+    border-top:  2px solid rgb(102, 102, 102);
+    border-bottom:  2px solid rgb(102, 102, 102);
+}
+
+.quantity {
+    font-size: 20px;
+    font-weight: 300;
+    padding-bottom: 15px;
+}
+
+#input {
+    display: inline-block;
+    width: 30%;
+    padding: 2px 5px 2px 5px;
+    text-align: center;
+    border:  2px solid rgb(102, 102, 102);
+}
+
+.each-box {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 80px;
+    padding-left: 20px;
+    list-style-type: none;
+    background-color: rgb(150, 142, 142);
+    border:  2px solid rgb(128, 127, 127);
+}
+
+.number {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    background-color: rgb(190, 187, 187);
+    border:  1px solid rgb(145, 144, 144);
+}
